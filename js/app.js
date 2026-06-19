@@ -1,3 +1,5 @@
+let ubicacionUsuario = null;
+
 let nivel1Completado = false;
 let nivel2Completado = false;
 let nivel3Completado = false;
