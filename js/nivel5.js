@@ -31,14 +31,14 @@ for(let i=0;i<250000;i++){
         Number(
             (
                 Math.random()*60
-            ).toFixed(2)
+            ).toFixed(5)
         );
 
     let humedad =
         Number(
             (
                 Math.random()*100
-            ).toFixed(2)
+            ).toFixed(5)
         );
 
     let presion =
