@@ -1,3 +1,4 @@
+let ubicacionUsuario = null;
 let nivel1Completado = false;
 let nivel2Completado = false;
 let nivel3Completado = false;
@@ -6,6 +7,19 @@ let nivel5Completado = false;
 
 let resultadoFinalNivel5 = null;
 
+function mostrarNivel(idNivel){
+
+document
+    .querySelectorAll(".nivel")
+    .forEach(nivel=>{
+        nivel.classList.remove("activo");
+    });
+
+document
+    .getElementById(idNivel)
+    .classList.add("activo");
+
+}
 
 
 function actualizarReloj(){
@@ -21,7 +35,15 @@ reloj.textContent =
 setInterval(actualizarReloj,1000);
 
 actualizarReloj();
+document
+.getElementById("btnNivel2")
+.addEventListener("click",()=>{
 
+if(nivel1Completado){
+    mostrarNivel("nivel2");
+}
+
+});
 
 
 function mostrarAlerta(mensaje, tipo, icono){
