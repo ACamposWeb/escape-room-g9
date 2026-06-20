@@ -17,6 +17,13 @@ Es necesario iniciar un servidor web local. Por ejemplo, con Python:
 
 ```bash
 python -m http.server
+```
+
+Luego, abrir el navegador en:
+
+```text
+http://localhost:8000
+```
 --- 
 ## Descripción 
 La humanidad ha perdido acceso a una base de datos que contiene información crítica para el funcionamiento de una ciudad inteligente. Los estudiantes deberán desarrollar una aplicación web que permita al usuario superar cinco niveles consecutivos para recuperar el acceso al sistema. 
