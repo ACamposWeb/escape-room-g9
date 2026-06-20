@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Cumplida - La Cámara de los Cinco Desafíos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ui.css">
+</head>
+<body class="body-terminal scanlines">
+
+    <div id="particulas-cont"></div>
+
+    <div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="card card-sistema p-4 text-center mx-auto" style="max-width: 850px;">
+            <div class="card-body">
+                
+                <div class="mb-4">
+                    <i class="bi bi-trophy-fill display-1" style="color: var(--neon-green); filter: drop-shadow(0 0 20px var(--neon-green));"></i>
+                </div>
+
+                <h1 class="titulo-glitch mb-2">Sistema Restaurado</h1>
+                <p class="text-white-50 mb-4 fst-italic">"La Cámara de los Cinco Desafíos"</p>
+                
+                <div class="terminal-box mb-4 text-start">
+                    <div>> [SISTEMA] Verificando secuencia de seguridad...</div>
+                    <div>> [SISTEMA] Nivel 1: Geolocalización autenticada... OK</div>
+                    <div>> [SISTEMA] Nivel 2: Mapa cartográfico reconstruido... OK</div>
+                    <div>> [SISTEMA] Nivel 3: Evidencia fotográfica almacenada... OK</div>
+                    <div>> [SISTEMA] Nivel 4: Núcleo de procesamiento estabilizado... OK</div>
+                    <div>> [SISTEMA] Nivel 5: Portal cuántico sincronizado... OK</div>
+                    <div class="text-white fw-bold">> TODOS LOS PROTOCOLES DE LA CIUDAD INTELIGENTE HAN SIDO RESTAURADOS.</div>
+                </div>
+
+                <div class="row g-3 mb-4 text-start">
+                    <div class="col-md-6">
+                        <div class="status-row">
+                            <span><i class="bi bi-geo-alt-fill me-2"></i>NIVEL 01: EL GUARDIÁN DE LA UBICACIÓN</span>
+                            <span>[VERIFICADO]</span>
+                        </div>
+                        <div class="status-row">
+                            <span><i class="bi bi-map-fill me-2"></i>NIVEL 02: EL CARTÓGRAFO PERDIDO</span>
+                            <span>[VERIFICADO]</span>
+                        </div>
+                        <div class="status-row">
+                            <span><i class="bi bi-camera-fill me-2"></i>NIVEL 03: LA EVIDENCIA DEL EXPLORADOR</span>
+                            <span>[VERIFICADO]</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="status-row">
+                            <span><i class="bi bi-cpu-fill me-2"></i>NIVEL 04: EL NÚCLEO DE PROCESAMIENTO</span>
+                            <span>[VERIFICADO]</span>
+                        </div>
+                        <div class="status-row success">
+                            <span><i class="bi-diagram-3"></i> NIVEL 05: EL PORTAL CUÁNTICO</span>
+                            <span>[ESTABLE]</span>
+                        </div>
+                        <div class="status-row operativo">
+                            <span><i class="bi bi-cpu-fill me-2"></i>SISTEMA RESTAURADO</span>
+                             <span> ESTADO <i class="bi bi-check-all ms-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-neon mb-4 py-3">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-check-circle-fill me-3 display-6" style="color: var(--neon-blue);"></i>
+                        <div class="text-start">
+                            <strong>Misión Finalizada:</strong><br>
+                            <span class="text-white">Has recuperado el acceso a la base de datos crítica. La ciudad inteligente vuelve a funcionar con total normalidad.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="index.html" class="btn btn-outline-info btn-lg px-5">
+                    <i class="bi bi-box-arrow-left me-2"></i>Salir
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cont = document.getElementById('particulas-cont');
+        for(let i=0; i<30; i++) {
+            let p = document.createElement('div');
+            p.className = 'particle-fx';
+            p.style.left = Math.random() * 100 + 'vw';
+            p.style.top = Math.random() * 100 + 'vh';
+            p.style.opacity = Math.random();
+            p.style.animationDelay = (Math.random() * 5) + 's';
+            cont.appendChild(p);
+        }
+    </script>
+</body>
+</html>

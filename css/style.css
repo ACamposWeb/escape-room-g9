@@ -1,0 +1,49 @@
+:root {
+    --bg-dark: #0a0e14;
+    --card-bg: #161c24;
+    --neon-blue: #00d4ff;
+    --neon-green: #39ff14;
+    --text-color: #e0e0e0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.container {
+    background: rgba(22, 28, 36, 0.95);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+    max-width: 800px;
+}
+
+h1 {
+    color: var(--neon-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Ajuste para que la lista no se desborde */
+#ulRegistros {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #444;
+}
+
+/* Mejora de scroll para la lista */
+#ulRegistros::-webkit-scrollbar {
+    width: 8px;
+}
+#ulRegistros::-webkit-scrollbar-thumb {
+    background: var(--neon-blue);
+    border-radius: 4px;
+}
